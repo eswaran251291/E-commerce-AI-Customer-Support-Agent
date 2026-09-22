@@ -1,0 +1,132 @@
+{
+  "customers": {
+    "CUST-1001": {
+      "customer_id": "CUST-1001",
+      "name": "Priya Raman",
+      "email": "priya.raman@example.com",
+      "phone_last4": "4417",
+      "zip": "600042",
+      "tier": "gold"
+    },
+    "CUST-1002": {
+      "customer_id": "CUST-1002",
+      "name": "Daniel Osei",
+      "email": "daniel.osei@example.com",
+      "phone_last4": "9032",
+      "zip": "10021",
+      "tier": "standard"
+    },
+    "CUST-1003": {
+      "customer_id": "CUST-1003",
+      "name": "Mei Tanaka",
+      "email": "mei.tanaka@example.com",
+      "phone_last4": "2288",
+      "zip": "94107",
+      "tier": "standard"
+    }
+  },
+  "orders": {
+    "ORD-10234": {
+      "order_id": "ORD-10234",
+      "customer_id": "CUST-1001",
+      "status": "in_transit",
+      "placed_at": "2026-09-14",
+      "payment_method": "Visa ending 4417",
+      "total": 189.97,
+      "currency": "USD",
+      "delivered_at": null,
+      "expected_delivery": "2026-09-24",
+      "original_delivery_estimate": "2026-09-21",
+      "delay_reason": "Severe weather at the Chennai sorting hub",
+      "carrier": "BlueDart",
+      "tracking_number": "BD884512339IN",
+      "tracking_url": "https://track.example.com/BD884512339IN",
+      "shipping_address": "12 Anna Salai, Chennai 600042",
+      "items": [
+        {"sku": "SKU-AUD-77", "name": "Nimbus Wireless Headphones", "qty": 1, "price": 149.99, "category": "electronics"},
+        {"sku": "SKU-CBL-12", "name": "Braided USB-C Cable 2m", "qty": 2, "price": 19.99, "category": "electronics"}
+      ]
+    },
+    "ORD-10235": {
+      "order_id": "ORD-10235",
+      "customer_id": "CUST-1002",
+      "status": "delivered",
+      "placed_at": "2026-08-30",
+      "payment_method": "Mastercard ending 9032",
+      "total": 84.5,
+      "currency": "USD",
+      "delivered_at": "2026-09-05",
+      "expected_delivery": "2026-09-05",
+      "original_delivery_estimate": "2026-09-05",
+      "delay_reason": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10123456784",
+      "tracking_url": "https://track.example.com/1Z999AA10123456784",
+      "shipping_address": "440 E 62nd St, New York 10021",
+      "items": [
+        {"sku": "SKU-APP-31", "name": "Merino Crew Sweater (M)", "qty": 1, "price": 84.5, "category": "apparel"}
+      ]
+    },
+    "ORD-10236": {
+      "order_id": "ORD-10236",
+      "customer_id": "CUST-1003",
+      "status": "delivered",
+      "placed_at": "2026-06-02",
+      "payment_method": "Amex ending 2288",
+      "total": 312.0,
+      "currency": "USD",
+      "delivered_at": "2026-06-08",
+      "expected_delivery": "2026-06-08",
+      "original_delivery_estimate": "2026-06-08",
+      "delay_reason": null,
+      "carrier": "FedEx",
+      "tracking_number": "7749 1123 8890",
+      "tracking_url": "https://track.example.com/774911238890",
+      "shipping_address": "89 Brannan St, San Francisco 94107",
+      "items": [
+        {"sku": "SKU-KIT-04", "name": "Cast Iron Skillet 12in", "qty": 1, "price": 79.0, "category": "kitchen"},
+        {"sku": "SKU-KIT-09", "name": "Espresso Machine Mini", "qty": 1, "price": 233.0, "category": "kitchen"}
+      ]
+    },
+    "ORD-10237": {
+      "order_id": "ORD-10237",
+      "customer_id": "CUST-1001",
+      "status": "processing",
+      "placed_at": "2026-09-21",
+      "payment_method": "Visa ending 4417",
+      "total": 42.0,
+      "currency": "USD",
+      "delivered_at": null,
+      "expected_delivery": "2026-09-27",
+      "original_delivery_estimate": "2026-09-27",
+      "delay_reason": null,
+      "carrier": null,
+      "tracking_number": null,
+      "tracking_url": null,
+      "shipping_address": "12 Anna Salai, Chennai 600042",
+      "items": [
+        {"sku": "SKU-BTY-15", "name": "Aloe Face Cleanser", "qty": 2, "price": 21.0, "category": "beauty"}
+      ]
+    },
+    "ORD-10238": {
+      "order_id": "ORD-10238",
+      "customer_id": "CUST-1002",
+      "status": "refund_pending",
+      "placed_at": "2026-09-01",
+      "payment_method": "Mastercard ending 9032",
+      "total": 59.99,
+      "currency": "USD",
+      "delivered_at": "2026-09-06",
+      "expected_delivery": "2026-09-06",
+      "original_delivery_estimate": "2026-09-06",
+      "delay_reason": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10123456999",
+      "tracking_url": "https://track.example.com/1Z999AA10123456999",
+      "shipping_address": "440 E 62nd St, New York 10021",
+      "items": [
+        {"sku": "SKU-TOY-22", "name": "Wooden Puzzle Set", "qty": 1, "price": 59.99, "category": "toys"}
+      ]
+    }
+  }
+}

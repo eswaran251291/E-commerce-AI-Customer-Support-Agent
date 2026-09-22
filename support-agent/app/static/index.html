@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support Agent — Demo Console</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<header>
+  <div>
+    <h1>E-commerce Support Agent</h1>
+    <p class="sub">Order status · tracking · returns · refunds · escalation</p>
+  </div>
+  <div class="header-right">
+    <span id="llm-badge" class="badge">checking…</span>
+    <button id="reset" class="ghost">New conversation</button>
+  </div>
+</header>
+
+<main>
+  <section class="chat-pane">
+    <div id="messages" class="messages"></div>
+    <div class="suggestions" id="suggestions"></div>
+    <form id="composer">
+      <input id="input" autocomplete="off" placeholder="Ask about an order, return, refund or delivery…" />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <aside class="inspector">
+    <h2>Agent inspector</h2>
+    <div class="card">
+      <h3>Understanding</h3>
+      <dl id="understanding"><dd class="muted">No turns yet.</dd></dl>
+    </div>
+    <div class="card">
+      <h3>Actions taken</h3>
+      <ul id="actions"><li class="muted">None yet.</li></ul>
+    </div>
+    <div class="card">
+      <h3>Escalations</h3>
+      <ul id="escalations"><li class="muted">None.</li></ul>
+    </div>
+    <div class="card">
+      <h3>Mock data</h3>
+      <ul id="orders" class="orders"></ul>
+    </div>
+  </aside>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
