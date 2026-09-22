@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "id": "KB-RET-01",
+      "title": "Return window and eligibility",
+      "keywords": ["return", "returns", "send back", "exchange", "return window", "eligible"],
+      "body": "Most items can be returned within 30 days of delivery in original condition. Electronics have a 15-day window. Final-sale, personalized, and perishable items cannot be returned."
+    },
+    {
+      "id": "KB-RET-02",
+      "title": "How returns are shipped",
+      "keywords": ["return label", "ship back", "drop off", "pickup", "courier"],
+      "body": "We email a prepaid return label as soon as a return is approved. Drop the parcel at any carrier point within 7 days, or schedule a doorstep pickup from the return page."
+    },
+    {
+      "id": "KB-REF-01",
+      "title": "Refund timelines",
+      "keywords": ["refund", "money back", "credited", "reimburse", "charge back"],
+      "body": "Refunds are issued to the original payment method within 3-5 business days of the returned item being scanned by the carrier. Bank posting can add 2-3 business days."
+    },
+    {
+      "id": "KB-DEL-01",
+      "title": "Standard delivery timeframes",
+      "keywords": ["delivery", "shipping time", "how long", "arrive", "eta", "delivery time"],
+      "body": "Standard delivery is 3-6 business days, express is 1-2 business days. Orders placed after 6pm local time begin processing the next business day."
+    },
+    {
+      "id": "KB-DEL-02",
+      "title": "Delayed or stuck shipments",
+      "keywords": ["delay", "delayed", "late", "stuck", "not moving", "missing package"],
+      "body": "If tracking has not updated for 48 hours we open a carrier trace. Traces resolve within 3 business days; if the parcel is not located we reship or refund in full."
+    },
+    {
+      "id": "KB-PAY-01",
+      "title": "Payments and authorization holds",
+      "keywords": ["payment", "charged twice", "authorization", "hold", "card", "billing"],
+      "body": "An authorization hold is placed at checkout and released within 5 business days if the order is cancelled. Duplicate authorizations drop off automatically and are never captured."
+    },
+    {
+      "id": "KB-ACC-01",
+      "title": "Account and address changes",
+      "keywords": ["account", "address", "change address", "email change", "password"],
+      "body": "Shipping addresses can be edited while an order is in processing. Once an order ships, the address is locked and must be redirected through the carrier."
+    },
+    {
+      "id": "KB-PRD-01",
+      "title": "Warranty on electronics",
+      "keywords": ["warranty", "guarantee", "defect", "repair"],
+      "body": "Electronics include a 12-month manufacturer warranty covering defects. Accidental damage is not covered. Warranty claims require the order ID and a photo of the item."
+    }
+  ],
+  "policies": {
+    "return_window_days": 30,
+    "electronics_return_window_days": 15,
+    "refund_business_days": "3-5",
+    "delay_compensation_threshold_days": 2,
+    "delay_compensation_voucher_usd": 10
+  }
+}
