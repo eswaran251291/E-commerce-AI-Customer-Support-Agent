@@ -60,6 +60,21 @@ def test_order_details_require_verification(agent: SupportAgent) -> None:
     assert "BD884512339IN" in second.reply
 
 
+def test_verification_does_not_carry_to_another_customers_order(agent: SupportAgent) -> None:
+    agent.handle("s11", "status of ORD-10234? zip 600042")
+    response = agent.handle("s11", "and where is ORD-10236?")
+    assert not response.identity_verified
+    assert "confirm" in response.reply.lower()
+    assert "FedEx" not in response.reply
+
+
+def test_wrong_verification_detail_keeps_order_locked(agent: SupportAgent) -> None:
+    agent.handle("s12", "status of ORD-10234?")
+    response = agent.handle("s12", "zip 99999")
+    assert not response.identity_verified
+    assert "BD884512339IN" not in response.reply
+
+
 def test_delayed_order_offers_compensation(agent: SupportAgent) -> None:
     agent.handle("s5", "Tracking for ORD-10234 please, zip 600042")
     response = agent.handle("s5", "any update on ORD-10234?")
