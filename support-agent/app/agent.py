@@ -213,6 +213,8 @@ class SupportAgent:
     def _verify(self, session: Session, order: dict[str, Any]) -> bool:
         if session.verified and session.customer_id == order["customer_id"]:
             return True
+        # Verification is per customer: a different customer's order re-opens the gate.
+        session.verified = False
         customer = self.store.get_customer(order["customer_id"]) or {}
         provided = session.entities
         checks = [
